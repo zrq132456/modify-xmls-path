@@ -2,7 +2,7 @@
 modify &lt;path> values of XML annotation files in batches
 
 
-## Why do you need to modify the value of /<path/>?
+## Why do you need to modify the value of `<path>`?
 The current image path of the dataset is different from the path stored when the image was marked.
 
 ## Pre-set premise
