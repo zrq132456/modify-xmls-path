@@ -29,14 +29,10 @@ def modify_xml_path(
         pass
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='This script is to modify <path> in voc format xmls')
-    parser.add_argument('--xmls_path', type=str, default="./shrimp_fry/Annotations/",
-                        help='path to xml files directory.')
-    parser.add_argument('--images_path', type=str, default="./shrimp_fry/JPEGImages/",
-                        help='path to image files directory.')
-    parser.add_argument('--img_format', type=str, default=".jpg",
-                        help='format of img file.')
+    parser = argparse.ArgumentParser(description='This script is to modify <path> in voc format xmls')
+    parser.add_argument('--xmls_path', type=str, default="./datasets/Annotations/", help='path to xml files directory.')
+    parser.add_argument('--images_path', type=str, default="./datasets/JPEGImages/", help='path to image files directory.')
+    parser.add_argument('--img_format', type=str, default=".jpg", help='format of img file.')
     args = parser.parse_args()
 
     modify_xml_path(args.xmls_path, args.img_format, args.images_path) # 调用修改函数
